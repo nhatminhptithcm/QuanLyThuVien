@@ -3,7 +3,7 @@ project(QuanLyThuVien)
 
 set(CMAKE_CXX_STANDARD 17)
 
-add_executable(QuanLyThuVien main.cpp
+add_executable(QuanLyThuVien
         Macro.h
         mylib.h
         GlobalVariable.h
@@ -27,4 +27,5 @@ add_executable(QuanLyThuVien main.cpp
         Check_Nhap.cpp
         stdafx.h
         stdafx.cpp
-        targetver.h)
+        targetver.h
+        GlobalVariable.cpp)
