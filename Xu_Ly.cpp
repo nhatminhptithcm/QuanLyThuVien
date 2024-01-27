@@ -14,7 +14,7 @@ void Introduce()
     string a;
 
     // lay tu file o che do chi doc
-    ifstream inFile("introduce.txt", ios::in);
+    ifstream inFile("..\\introduce.txt", ios::in);
     if (inFile.good())  // Kiem tra xem file co ket noi duoc hay khong?
     {
         while (!inFile.eof()) {
@@ -77,7 +77,7 @@ void ManHinhChinh()
     int y = 0;
 
     // lay tu file va chi doc
-    ifstream inFile("QuanLyThuVien.txt", ios::in);
+    ifstream inFile("..\\QuanLyThuVien.txt", ios::in);
 
     // Kiem tra xem file co ket noi duoc hay khong?
     if (inFile.good())
@@ -154,7 +154,7 @@ void OutFile_DG(TREE_DG t, fstream &file)
 void Save_DG(TREE_DG t)
 {
     fstream outFile;
-    outFile.open("DocGia.txt", ios::out);
+    outFile.open("..\\DocGia.txt", ios::out);
     if (outFile.is_open())
     {
         // so doc gia..
@@ -171,7 +171,7 @@ void Save_DG(TREE_DG t)
 void Save_DS(LIST_DAUSACH lDS)
 {
     fstream outFile;
-    outFile.open("DauSach.txt", ios::out );
+    outFile.open("..\\DauSach.txt", ios::out );
     if (outFile.is_open())
     {
         outFile << lDS.n + 1 << endl;
@@ -204,7 +204,7 @@ void Load_DS(LIST_DAUSACH &lDS)
 {
     fstream inFile;
     dauSach info;
-    inFile.open("DauSach.txt", ios::in);
+    inFile.open("..\\DauSach.txt", ios::in);
     pDAU_SACH pDS;
     DMS dms;
     int sodausach, sosach;
@@ -262,7 +262,7 @@ void Load_DG(TREE_DG &t)
     NODE_DG* pDG = NULL;
     DOC_GIA dg;
     MUON_TRA mt;
-    inFile.open("DocGia.txt", ios::in);
+    inFile.open("..\\DocGia.txt", ios::in);
     int sodocgia, sosachmuontra;
 
     if (inFile.is_open())
